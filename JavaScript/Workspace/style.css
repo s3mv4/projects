@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    padding-top: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header img {
+    float: left;
+    margin-left: 0px;
+}
+
+nav {
+    float: right;
+    padding-right: 100px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    margin-top: 15px;
+}
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: yellow;
+}
+
+nav ul a.current-page {
+    padding-bottom: 25px;
+    border-bottom: 7px solid yellow;
+}
+
+.shadow:hover, .shadow:focus {
+    box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.7);
+}
+
+h1.delete-text {
+    display: inline-block;
+}
+
+input.delete-input {
+    width: 35px;
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+a.black-border {
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    background-color: black;
+    border: 10px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+}
+
+input.black-border, textarea.black-border {
+    width: 80%;
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+textarea.black-border {
+    width: 80%;
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+button.black-border {
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+button.black-border-inverted {
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+}
+
+div.container-80 {
+    width: 80%;
+}
+
+div.container-50 {
+    width: 50%;
+}
+
+div.container-25 {
+    width: 25%;
+}
+
+.center-block {
+    display: block;
+    margin: 10px auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.left-text {
+    text-align: left;
+}
+
+ul.none-style {
+    list-style: none;
+}

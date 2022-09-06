@@ -1,0 +1,56 @@
+/* ranje: rgb(255, 145, 10) */
+
+html {
+    visibility: visible;
+    opacity: 1;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+body.start {
+    background-color: rgb(252, 220, 0);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1.start {
+    font-size: 120px;
+}
+
+ul li {
+    font-size: 25px;
+}
+
+p.start {
+    font-size: 50px;
+}
+
+div.ul {
+    width: 50%;
+    display: block;
+    margin: 50px 0px 0px 50px;
+}
+
+div.title {
+    background-color: rgb(252, 220, 0);
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 1px 0;
+}
+
+div.title h1 {
+    margin-left: 50px;
+}
+
+div.start {
+    width: 100%;
+    margin-top: 200px;
+    text-align: center;
+}

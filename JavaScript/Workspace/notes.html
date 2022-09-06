@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="notes.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="logo.png" width="75" height="75" alt="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="notes.html" class="current-page">Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <input type="text" placeholder="Title" id="title-input" class="black-border center-block">
+    <textarea placeholder="Note" cols="30" rows="7" id="note-input"class="black-border center-block"></textarea>
+
+    <button id="submit-btn" class="black-border center-block">SUBMIT</button>
+
+    <div class="container-25 center-block center-text">
+        <h1 class="delete-text">Delete note number:</h1>
+        <input type="text" id="delete-index-input" class="delete-input">
+    </div>
+
+    <button id="delete-index-btn" class="black-border-inverted center-block">DELETE</button>
+    <button id="delete-all-btn" class="black-border-inverted center-block">DELETE ALL</button>
+
+    <div class="container-50 center-block">
+        <ul id="notes-ul" class="none-style"></ul>
+    </div>
+</body>
+</html>

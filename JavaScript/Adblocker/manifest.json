@@ -1,0 +1,9 @@
+{
+    "manifest_version": 3,
+    "name": "Adblock Plus - free ad blocker",
+    "version": "4.20.69",
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["script.js"]
+    }]
+}
