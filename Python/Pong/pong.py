@@ -93,8 +93,8 @@ game_active_multiplayer = False
 clock = pygame.time.Clock()
 
 # Fonts and text
-small_font = pygame.font.Font("Pong/Fonts/Minecraft.ttf", 25)
-big_font = pygame.font.Font("Pong/Fonts/Minecraft.ttf", 150)
+small_font = pygame.font.Font("Fonts/Minecraft.ttf", 25)
+big_font = pygame.font.Font("Fonts/Minecraft.ttf", 150)
 
 title_text = big_font.render("PONG", False, (255, 255, 255))
 title_text_rect = title_text.get_rect(center = (425, 250))

@@ -99,18 +99,18 @@ game_active_singleplayer = False
 game_active_multiplayer = False
 
 # Audio
-OOF_sound = pygame.mixer.Sound("Python/PongLURGE/Audio/OOF.mp3")
+OOF_sound = pygame.mixer.Sound("Audio/OOF.mp3")
 OOF_sound.set_volume(2)
 
-poing_sound = pygame.mixer.Sound("Python/PongLURGE/Audio/poing.mp3")
+poing_sound = pygame.mixer.Sound("Audio/poing.mp3")
 poing_sound.set_volume(2)
 
 # Framerate
 clock = pygame.time.Clock()
 
 # Fonts and text
-small_font = pygame.font.Font("Python/PongLURGE/Fonts/Minecraft.ttf", 25)
-big_font = pygame.font.Font("Python/PongLURGE/Fonts/Minecraft.ttf", 150)
+small_font = pygame.font.Font("Fonts/Minecraft.ttf", 25)
+big_font = pygame.font.Font("Fonts/Minecraft.ttf", 150)
 
 title_text = big_font.render("PONG", False, (255, 255, 255))
 title_text_rect = title_text.get_rect(center = (425, 250))
