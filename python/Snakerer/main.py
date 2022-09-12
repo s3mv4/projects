@@ -10,9 +10,9 @@ clock = pygame.time.Clock()
 
 game_active = False
 
-small_font = pygame.font.Font("Python/Snakerer/Fonts/Minecraft.ttf", 50)
-medium_font = pygame.font.Font("Python/Snakerer/Fonts/Minecraft.ttf", 50)
-big_font = pygame.font.Font("Python/Snakerer/Fonts/Minecraft.ttf", 125)
+small_font = pygame.font.Font("Fonts/Minecraft.ttf", 50)
+medium_font = pygame.font.Font("Fonts/Minecraft.ttf", 50)
+big_font = pygame.font.Font("Fonts/Minecraft.ttf", 125)
 
 title_text = big_font.render("SNAKERER", False, (0, 255, 0))
 title_text_rect = title_text.get_rect(center = (width/2, height/8*3))
@@ -26,7 +26,7 @@ snake2 = [[width-100, height-20], [width-80, height-20], [width-60, height-20], 
 
 respawns = 0
 
-chap_sound = pygame.mixer.Sound("Python/Snakerer/Audio/chap.mp3")
+chap_sound = pygame.mixer.Sound("Audio/chap.mp3")
 
 food = []
 while food == []:
