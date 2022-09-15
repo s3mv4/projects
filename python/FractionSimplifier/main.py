@@ -1,5 +1,5 @@
-numerator = 2
-denominator = 12
+numerator = int(input("numerator: "))
+denominator = int(input("denominator: "))
 
 numbers = []
 
