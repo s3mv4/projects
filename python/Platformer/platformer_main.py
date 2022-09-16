@@ -3,7 +3,7 @@ import pygame, sys
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load("Platformer/Images/player_idle/player_idle1_right.png").convert_alpha()
+        self.image = pygame.image.load("Images/player_idle/player_idle1_right.png").convert_alpha()
         self.rect = self.image.get_rect(midbottom=(display_size[0] / 2, 50))
         self.vel = [0, 0]
         self.flipside = 0
@@ -11,18 +11,18 @@ class Player(pygame.sprite.Sprite):
         self.on_ground = False
         self.can_2jump = False
         self.idle_animation = [
-        pygame.image.load("Platformer/Images/player_idle/player_idle1_right.png").convert_alpha(),
-        pygame.image.load("Platformer/Images/player_idle/player_idle2_right.png").convert_alpha()
+        pygame.image.load("Images/player_idle/player_idle1_right.png").convert_alpha(),
+        pygame.image.load("Images/player_idle/player_idle2_right.png").convert_alpha()
         ]
         self.walking_animation = [
-        pygame.image.load("Platformer/Images/player_walk/player_walk1_right.png").convert_alpha(),
-        pygame.image.load("Platformer/Images/player_walk/player_walk2_right.png").convert_alpha(),
-        pygame.image.load("Platformer/Images/player_walk/player_walk3_right.png").convert_alpha(),
-        pygame.image.load("Platformer/Images/player_walk/player_walk4_right.png").convert_alpha(),
-        pygame.image.load("Platformer/Images/player_walk/player_walk5_right.png").convert_alpha(),
-        pygame.image.load("Platformer/Images/player_walk/player_walk6_right.png").convert_alpha(),
-        pygame.image.load("Platformer/Images/player_walk/player_walk7_right.png").convert_alpha(),
-        pygame.image.load("Platformer/Images/player_walk/player_walk8_right.png").convert_alpha()
+        pygame.image.load("Images/player_walk/player_walk1_right.png").convert_alpha(),
+        pygame.image.load("Images/player_walk/player_walk2_right.png").convert_alpha(),
+        pygame.image.load("Images/player_walk/player_walk3_right.png").convert_alpha(),
+        pygame.image.load("Images/player_walk/player_walk4_right.png").convert_alpha(),
+        pygame.image.load("Images/player_walk/player_walk5_right.png").convert_alpha(),
+        pygame.image.load("Images/player_walk/player_walk6_right.png").convert_alpha(),
+        pygame.image.load("Images/player_walk/player_walk7_right.png").convert_alpha(),
+        pygame.image.load("Images/player_walk/player_walk8_right.png").convert_alpha()
         ]
         self.idle_frame = 0
         self.walking_frame = 0
@@ -86,13 +86,13 @@ class Player(pygame.sprite.Sprite):
                 self.idle_frame = 0
             if self.flipside == 1:
                 self.idle_animation = [
-                pygame.image.load("Platformer/Images/player_idle/player_idle1_right.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_idle/player_idle2_right.png").convert_alpha()
+                pygame.image.load("Images/player_idle/player_idle1_right.png").convert_alpha(),
+                pygame.image.load("Images/player_idle/player_idle2_right.png").convert_alpha()
                 ]
             elif self.flipside == 0:
                 self.idle_animation = [
-                pygame.image.load("Platformer/Images/player_idle/player_idle1_left.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_idle/player_idle2_left.png").convert_alpha()
+                pygame.image.load("Images/player_idle/player_idle1_left.png").convert_alpha(),
+                pygame.image.load("Images/player_idle/player_idle2_left.png").convert_alpha()
                 ]
 
     def animation_walking(self):
@@ -108,33 +108,33 @@ class Player(pygame.sprite.Sprite):
                 self.walking_frame = 0
             if self.flipside == 1:
                 self.walking_animation = [
-                pygame.image.load("Platformer/Images/player_walk/player_walk1_right.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk2_right.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk3_right.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk4_right.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk5_right.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk6_right.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk7_right.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk8_right.png").convert_alpha()
+                pygame.image.load("Images/player_walk/player_walk1_right.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk2_right.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk3_right.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk4_right.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk5_right.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk6_right.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk7_right.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk8_right.png").convert_alpha()
                 ]
             elif self.flipside == 0:
                 self.walking_animation = [
-                pygame.image.load("Platformer/Images/player_walk/player_walk1_left.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk2_left.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk3_left.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk4_left.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk5_left.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk6_left.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk7_left.png").convert_alpha(),
-                pygame.image.load("Platformer/Images/player_walk/player_walk8_left.png").convert_alpha()
+                pygame.image.load("Images/player_walk/player_walk1_left.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk2_left.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk3_left.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk4_left.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk5_left.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk6_left.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk7_left.png").convert_alpha(),
+                pygame.image.load("Images/player_walk/player_walk8_left.png").convert_alpha()
                 ]
 
     def animation_jump(self):
         if self.walking == False and self.idle == False:
             if self.flipside == 1:
-                self.image = pygame.image.load("Platformer/Images/player_walk/player_walk3_right.png").convert_alpha()
+                self.image = pygame.image.load("Images/player_walk/player_walk3_right.png").convert_alpha()
             elif self.flipside == 0:
-                self.image = pygame.image.load("Platformer/Images/player_walk/player_walk3_left.png").convert_alpha()
+                self.image = pygame.image.load("Images/player_walk/player_walk3_left.png").convert_alpha()
 
     def collisions(self):
         for tile_rect in tile_rects:
@@ -205,8 +205,8 @@ clock = pygame.time.Clock()
 player = pygame.sprite.GroupSingle()
 player.add(Player())
 
-grass = pygame.image.load("Platformer/Images/grass.png").convert_alpha()
-dirt = pygame.image.load("Platformer/Images/dirt.png").convert_alpha()
+grass = pygame.image.load("Images/grass.png").convert_alpha()
+dirt = pygame.image.load("Images/dirt.png").convert_alpha()
 tile_size = grass.get_width()
 
 game_map = [['0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
