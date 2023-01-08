@@ -42,6 +42,7 @@ nav {
     width: 470px;
     display: block;
     margin: 0 auto;
+    padding-bottom: 28px;
 }
 
 .card--container {
