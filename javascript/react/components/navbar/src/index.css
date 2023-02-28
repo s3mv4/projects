@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    position: sticky;
+    top: 0;
+}
+
+.nav-title {
+    padding-left: 1em;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li a {
+    display: block;
+    padding: 2em;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-links li a:hover {
+    background-color: #bbb;
+}
