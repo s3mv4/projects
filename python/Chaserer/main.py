@@ -9,12 +9,12 @@ class Catcher(pygame.sprite.Sprite):
         super().__init__()
         if runner_side == "left":
             catcher_direction = "left"
-            self.image = pygame.image.load("Python/Dagmoment2/Images/catcher_left.png").convert_alpha()
+            self.image = pygame.image.load("Images/catcher_left.png").convert_alpha()
             self.image = pygame.transform.scale(self.image, (64, 64))
             self.rect = self.image.get_rect(midright = (700, 300))
         else:
             catcher_direction = "right"
-            self.image = pygame.image.load("Python/Dagmoment2/Images/catcher_right.png").convert_alpha()
+            self.image = pygame.image.load("Images/catcher_right.png").convert_alpha()
             self.image = pygame.transform.scale(self.image, (64, 64))
             self.rect = self.image.get_rect(midleft = (100, 300))
         self.vel = [0, 0]
@@ -80,13 +80,13 @@ class Catcher(pygame.sprite.Sprite):
 
     def animation(self):
         if catcher_direction == "up":
-            self.image = pygame.image.load("Python/Dagmoment2/Images/catcher_up.png").convert_alpha()
+            self.image = pygame.image.load("Images/catcher_up.png").convert_alpha()
         if catcher_direction == "down":
-            self.image = pygame.image.load("Python/Dagmoment2/Images/catcher_down.png").convert_alpha()
+            self.image = pygame.image.load("Images/catcher_down.png").convert_alpha()
         if catcher_direction == "left":
-            self.image = pygame.image.load("Python/Dagmoment2/Images/catcher_left.png").convert_alpha()
+            self.image = pygame.image.load("Images/catcher_left.png").convert_alpha()
         if catcher_direction == "right":
-            self.image = pygame.image.load("Python/Dagmoment2/Images/catcher_right.png").convert_alpha()
+            self.image = pygame.image.load("Images/catcher_right.png").convert_alpha()
 
     def create_fireball(self):
         fireball_x = self.rect.centerx + 5
@@ -103,22 +103,22 @@ class Catcher(pygame.sprite.Sprite):
 class Fireball(pygame.sprite.Sprite):
     def __init__(self, x, y, direction):
         super().__init__()
-        self.image = pygame.image.load("Python/Dagmoment2/Images/fireball_left.png")
+        self.image = pygame.image.load("Images/fireball_left.png")
         self.rect = self.image.get_rect(center = (x, y))
         self.direction = direction
 
     def update(self):
         if self.direction == "up":
-            self.image = pygame.image.load("Python/Dagmoment2/Images/fireball_up.png")
+            self.image = pygame.image.load("Images/fireball_up.png")
             self.rect.y -= 10
         if self.direction == "down":
-            self.image = pygame.image.load("Python/Dagmoment2/Images/fireball_down.png")
+            self.image = pygame.image.load("Images/fireball_down.png")
             self.rect.y += 10
         if self.direction == "left":
-            self.image = pygame.image.load("Python/Dagmoment2/Images/fireball_left.png")
+            self.image = pygame.image.load("Images/fireball_left.png")
             self.rect.x -= 10
         if self.direction == "right":
-            self.image = pygame.image.load("Python/Dagmoment2/Images/fireball_right.png")
+            self.image = pygame.image.load("Images/fireball_right.png")
             self.rect.x += 10
 
         if self.rect.right <= 0 or self.rect.left >= 800 or self.rect.bottom <= 0 or self.rect.top >= 600:
@@ -131,7 +131,7 @@ class Runner(pygame.sprite.Sprite):
     def __init__(self):
         global runner_side
         super().__init__()
-        self.image = pygame.image.load("Python/Dagmoment2/Images/runner.png")
+        self.image = pygame.image.load("Images/runner.png")
         if runner_side == "left":
             self.rect = self.image.get_rect(center = (100, 300))
         else:
@@ -380,7 +380,7 @@ clock = pygame.time.Clock()
 game_active = False
 
 title_font = pygame.font.Font(None, 150)
-timer_font = pygame.font.Font("Python/Dagmoment2/Fonts/Minecraft.ttf", 50)
+timer_font = pygame.font.Font("Fonts/Minecraft.ttf", 50)
 winner_font = pygame.font.Font(None, 50)
 
 current_time = 0
@@ -394,9 +394,9 @@ winner = 0
 
 runner_side = 0
 
-pew_sound = pygame.mixer.Sound("Python/Dagmoment2/Audio/pew.mp3")
+pew_sound = pygame.mixer.Sound("Audio/pew.mp3")
 
-talk_sounds = [pygame.mixer.Sound("Python/Dagmoment2/Audio/pakken.mp3"), pygame.mixer.Sound("Python/Dagmoment2/Audio/pakken.mp3")]
+talk_sounds = [pygame.mixer.Sound("Audio/pakken.mp3"), pygame.mixer.Sound("Audio/pakken.mp3")]
 
 catcher = Catcher()
 catcher_group = pygame.sprite.Group()
@@ -425,11 +425,11 @@ winner_text_rect = winner_text.get_rect(midbottom = (400, 500))
 timer_text = timer_font.render(f"{time}", True, (255, 255, 255))
 timer_text_rect = timer_text.get_rect(midtop = (400, 25))
 
-title_catcher = pygame.image.load("Python/Dagmoment2/Images/catcher_title.png")
+title_catcher = pygame.image.load("Images/catcher_title.png")
 title_catcher = pygame.transform.scale(title_catcher, (128, 128))
 title_catcher_rect = title_catcher.get_rect(topleft = (600, 100))
 
-title_runner = pygame.image.load("Python/Dagmoment2/Images/runner_title.png")
+title_runner = pygame.image.load("Images/runner_title.png")
 title_runner = pygame.transform.scale(title_runner, (128, 128))
 title_runner_rect = title_runner.get_rect(topright = (200, 100))
 

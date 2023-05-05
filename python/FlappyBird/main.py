@@ -45,7 +45,7 @@ screen = pygame.display.set_mode((width, height))
 clock = pygame.time.Clock()
 
 # Player
-player = pygame.image.load("/home/s3m/Projects/Python/FlappyBird/hoofd.png").convert_alpha()
+player = pygame.image.load("hoofd.png").convert_alpha()
 player = pygame.transform.scale(player, (player.get_width()/4, player.get_width()/4))
 player_rect = player.get_rect(center = (width/4, height/2))
 player_vel_y = 0
@@ -54,9 +54,9 @@ player_vel_y = 0
 pipes = [Pipe()]
 
 # Sounds
-jammer_sound = pygame.mixer.Sound("/home/s3m/Projects/Python/FlappyBird/jammer.mp3")
-jump_sound = pygame.mixer.Sound("/home/s3m/Projects/Python/FlappyBird/jump.mp3")
-score_sound = pygame.mixer.Sound("/home/s3m/Projects/Python/FlappyBird/score.mp3")
+jammer_sound = pygame.mixer.Sound("jammer.mp3")
+jump_sound = pygame.mixer.Sound("jump.mp3")
+score_sound = pygame.mixer.Sound("score.mp3")
 
 # Score
 score = 0
