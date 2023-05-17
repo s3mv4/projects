@@ -36,7 +36,7 @@ fn main() {
             || (computer_choice == "paper" && choice.as_str().trim() == "rock")
             || (computer_choice == "scissors" && choice.as_str().trim() == "paper")
         {
-            println!("You win!");
+            println!("You lose!");
         }
 
         break;
