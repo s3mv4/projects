@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://df1d1kuvx0lrr"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_vx26i"]
+[ext_resource type="PackedScene" uid="uid://i5xof4genbkn" path="res://scenes/debris.tscn" id="2_8e375"]
+[ext_resource type="PackedScene" uid="uid://b8mbg0k5nvl3" path="res://scenes/background.tscn" id="3_6tjtj"]
+[ext_resource type="PackedScene" uid="uid://c4muxpnenqrfr" path="res://scenes/rocket.tscn" id="3_cxlr0"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_vx26i")
+debris_scene = ExtResource("2_8e375")
+grid_width = null
+
+[node name="Background" parent="." instance=ExtResource("3_6tjtj")]
+
+[node name="Rocket" parent="." instance=ExtResource("3_cxlr0")]
+position = Vector2(540, 1200)
+
+[node name="DebrisTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="ScoreTimer" type="Timer" parent="."]
+
+[node name="StartTimer" type="Timer" parent="."]
+
+[connection signal="scroll" from="Rocket" to="." method="_on_rocket_scroll"]
+[connection signal="scroll" from="Rocket" to="Background" method="_on_rocket_scroll"]
+[connection signal="timeout" from="DebrisTimer" to="." method="_on_debris_timer_timeout"]

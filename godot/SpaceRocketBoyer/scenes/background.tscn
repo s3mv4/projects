@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8mbg0k5nvl3"]
+
+[ext_resource type="Texture2D" uid="uid://ddj7fhrkp6mpl" path="res://assets/images/space_background.jpg" id="1_g85wo"]
+[ext_resource type="Script" path="res://scenes/background.gd" id="1_rvcyf"]
+
+[node name="Background" type="Node"]
+script = ExtResource("1_rvcyf")
+
+[node name="TextureRect1" type="TextureRect" parent="."]
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1956.0
+offset_top = -624.0
+offset_right = 1956.0
+offset_bottom = 624.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_g85wo")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_g85wo")
