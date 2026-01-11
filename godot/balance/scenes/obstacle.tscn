@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://epipw4trxf5c"]
+
+[ext_resource type="Texture2D" uid="uid://c6o2e4fgpr06t" path="res://assets/rect.png" id="1_7ukg5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_drdry"]
+size = Vector2(20, 16)
+
+[node name="Obstacle" type="Node2D"]
+
+[node name="Area2D" type="StaticBody2D" parent="."]
+position = Vector2(-60, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+scale = Vector2(100, 10)
+texture = ExtResource("1_7ukg5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(5, 0.6)
+shape = SubResource("RectangleShape2D_drdry")
+
+[node name="Area2D2" type="StaticBody2D" parent="."]
+position = Vector2(60, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D2"]
+scale = Vector2(100, 10)
+texture = ExtResource("1_7ukg5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+scale = Vector2(5, 0.6)
+shape = SubResource("RectangleShape2D_drdry")
